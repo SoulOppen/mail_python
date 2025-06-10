@@ -14,7 +14,8 @@ A continuación, se detallan los pasos para preparar el entorno de trabajo y ase
 
 ```bash
 python -m venv env
-Activa el ambiente virtual:
+```
+3. Activa el ambiente virtual:
 
 - En Windows (CMD o PowerShell):
 
