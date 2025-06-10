@@ -21,11 +21,14 @@ python -m venv env
 
 ```bash
 env\Scripts\activate
+```
 
 - En mac o linux(wsl):
 
 ```bash
 source env/bin/activate
-
+```
+4. Instalar requerimientos
 ```bash
 pip install -r requirements.txt
+```
