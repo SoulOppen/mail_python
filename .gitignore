@@ -1,2 +1,4 @@
 env/
-__pycache/
+__pycache__/
+run/*
+!run/.gitkeep

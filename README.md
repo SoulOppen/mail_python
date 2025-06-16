@@ -5,7 +5,7 @@ Para ejecutar este proyecto correctamente, es necesario instalar algunas depende
 Este proyecto utiliza Python y requiere la instalación de paquetes específicos para manejar archivos Excel, enviar correos electrónicos mediante Outlook y manipular datos fácilmente. Además, es recomendable crear un ambiente virtual para aislar las dependencias y evitar conflictos con otras aplicaciones en tu sistema.
 
 A continuación, se detallan los pasos para preparar el entorno de trabajo y asegurarte de que todo esté listo para ejecutar el proyecto.
-
+_Note solo funciona en windows_
 ### Crear y activar un ambiente virtual
 
 1. Abre una terminal y navega a la carpeta raíz del proyecto.
@@ -17,16 +17,8 @@ python -m venv env
 ```
 3. Activa el ambiente virtual:
 
-- En Windows (CMD o PowerShell):
-
 ```bash
 env\Scripts\activate
-```
-
-- En mac o linux(wsl):
-
-```bash
-source env/bin/activate
 ```
 4. Instalar requerimientos
 ```bash
