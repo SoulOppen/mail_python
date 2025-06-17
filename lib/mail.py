@@ -2,9 +2,8 @@ import win32com.client
 import os
 from ../lib.py import is_email_valid,archivo_existe
 class Mail:
-    def __init__(self,sender,receiver,subject):
-        self.__outlook=win32com.client.Dispatch("Outlook.Application")
-        if not is_email_valid(sender):
+    def __init__(self,receiver,subject,sender=None):
+        if not is_email_valid(sender) and not sender==None:
             raise ValueError("Sender email is not valid")
         if not is_email_valid(receiver):
             raise ValueError("Receiver email is not valid")
@@ -82,9 +81,9 @@ class Mail:
         Raises:
             ValueError: Si el email del remitente no está configurado en Outlook.
         """
-        if not self.is_sender_valid():
+        if not self.is_sender_valid() and not self.__sender==None:
             raise ValueError("Sender email is not valid")
-        mail = self.__outlook.CreateItem(0)
+        mail = win32com.client.Dispatch("Outlook.Application")
         self.set_receiver(mail)
         if len(self.__cc)>0:
             self.set_cc(mail)

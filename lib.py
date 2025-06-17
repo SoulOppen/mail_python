@@ -25,3 +25,11 @@ def archivo_existe(ruta):
         bool: True si el archivo existe, False en caso contrario.
     """
     return os.path.isfile(ruta)
+def execute_python(name):
+    """
+    Arg:
+        name(str) es el nombre del archivo ejecutable.
+    Returns:
+        int:0 si se ejecuta sin problema.
+    """
+    return os.system(f"python3 {name}")
