@@ -67,8 +67,8 @@ class Mail:
         mail.To = f"{self.__receiver}; {';'.join(self.__other)}"
     def set_cc(self,mail):
         mail.Cc = f"{';'.join(self.__cc)}"
-    def set_body(self,mail,string):
-        mail.HTMLBody = f"<body>{string}</body>"
+    def set_body(self,mail,body):
+        mail.HTMLBody = f"<body>{body}</body>"
     def send(self,send=True):
           """
         Crea el correo, agrega los adjuntos y lo envía o muestra según el parámetro.
