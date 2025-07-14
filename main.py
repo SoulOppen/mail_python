@@ -1,4 +1,5 @@
 from config import Task,Basic 
+from exit import exit
 def main():
     print("Bienvenido a tu administrador de tareas repetitivas en windows")
     print("Las tareas que podemos administrar hasta el momento son:")
@@ -7,7 +8,8 @@ def main():
         print(f"\t{i+1}-{task}")
     try:
         input_number=int(input("Numero de tarea: "))
-        print(tasks[input_number-1])
+        if tasks[input_number-1]=="Exit":
+            exit()
     except ValueError:
         print("Debes ingresar un número válido.")
         main()

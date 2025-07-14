@@ -3,5 +3,5 @@ Task=["Modificar excel",
       "Enviar mail masivos con outlook",
       "Enviar whatsApp"]
 Basic=[
-    "exit"
+    "Exit"
 ]
